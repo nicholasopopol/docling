@@ -1,5 +1,5 @@
 # Build stage for installing dependencies
-FROM node:20-slim AS builder
+FROM node:24.22.1-slim AS builder
 
 # Install necessary tools and prepare dependencies environment in one layer
 RUN apt-get update && apt-get install -y --no-install-recommends \
